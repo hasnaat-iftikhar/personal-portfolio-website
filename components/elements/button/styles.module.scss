@@ -1,0 +1,20 @@
+@import "../../../scss/helpers.scss";
+
+.button {
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 400;
+  background: $white;
+  padding: 14px 28px;
+  border: 2px solid $black;
+  border-radius: 4px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.79, 0.57, 0.06, 0.65);
+  transition-delay: 0s;
+  transition-property: all;
+
+  &:hover {
+    padding: 14px 38px;
+  }
+}

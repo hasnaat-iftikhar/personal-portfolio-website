@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 // Components
-import { Header } from "../components";
+import { Header, HeroSection } from "../components";
 
 export default function Home() {
   return (
@@ -14,6 +14,7 @@ export default function Home() {
 
       <main>
         <Header />
+        <HeroSection />
       </main>
     </>
   );
