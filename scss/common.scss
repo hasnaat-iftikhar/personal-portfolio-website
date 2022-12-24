@@ -9,6 +9,28 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  /* width */
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #fda228;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #ed9118;
+  }
+}
+
 h1,
 h2,
 h3,
