@@ -1,0 +1,51 @@
+@import "../../../scss/helpers.scss";
+
+.serviceInfo_wrapper {
+  margin-top: 150px;
+  @include contentWidth;
+
+  .serviceInfo_contantcontainer {
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .content_titleBox {
+      position: relative;
+      width: fit-content;
+
+      &:nth-child(2) {
+        margin-top: 12px;
+      }
+
+      .yellow_bar {
+        width: 102%;
+        height: 4px;
+        background: $yellow;
+        position: absolute;
+        bottom: 26%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+
+      .myService_title {
+        @include PrimaryFont;
+        font-size: 32px;
+      }
+    }
+
+    .myService_descriptionBox {
+      margin-top: 20px;
+
+      .myService_description {
+        font-size: 17px;
+        color: $black;
+        line-height: 24px;
+        opacity: 0.9;
+
+        &:nth-child(2) {
+          margin-top: 12px;
+        }
+      }
+    }
+  }
+}
