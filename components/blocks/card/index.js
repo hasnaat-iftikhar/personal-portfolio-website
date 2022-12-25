@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 // Styles
 import styles from "./styles.module.scss";
