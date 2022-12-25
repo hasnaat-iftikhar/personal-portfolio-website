@@ -1,0 +1,45 @@
+.projects_section {
+  margin-top: 50px;
+
+  .projects_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .each_project {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+      position: relative;
+
+      &:hover {
+        .backdrop {
+          display: flex;
+        }
+      }
+
+      .backdrop {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: #000000cc;
+        display: none;
+
+        svg path {
+          fill: white;
+        }
+      }
+
+      .project_image {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

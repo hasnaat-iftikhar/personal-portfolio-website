@@ -1,0 +1,25 @@
+@import "../../../scss/helpers.scss";
+
+.latestProjects_section {
+  background-color: $black;
+  margin-top: 250px;
+
+  .container {
+    @include contentWidth;
+    padding: 100px 0;
+
+    .section_title {
+      @include PrimaryFont;
+      color: $white;
+      font-size: 42px;
+    }
+
+    .projects_wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      column-gap: 20px;
+      margin-top: 50px;
+    }
+  }
+}
