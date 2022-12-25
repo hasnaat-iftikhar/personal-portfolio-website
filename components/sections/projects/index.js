@@ -1,7 +1,7 @@
 import React from "react";
 
 // Data
-import projects from "../../../mocks/projects";
+import { projects } from "../../../mocks/projects";
 
 // Icons
 import Navigate from "../../../icons/navigate.svg";

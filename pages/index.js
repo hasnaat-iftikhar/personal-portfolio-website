@@ -6,6 +6,7 @@ import {
   HeroSection,
   MyServiceInfo,
   ProjectsSection,
+  LatestProjectsSection,
 } from "../components";
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
         <HeroSection />
         <ProjectsSection />
         <MyServiceInfo />
+        <LatestProjectsSection />
       </main>
     </>
   );

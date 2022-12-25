@@ -22,8 +22,8 @@ const MyServiceInfo = () => {
             website.
           </p>
           <p className={styles.myService_description}>
-            Web developer and Mobile application developer, I help you by
-            building killer website and mobile application from scratch and will
+            Web and Mobile application developer, I'll help you by building
+            pixel-perfect website and mobile application from scratch and will
             help you to keep your website up to date by applying changes
             according to your needs time to time!
           </p>
