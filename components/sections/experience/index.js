@@ -19,6 +19,7 @@ const ExperienceSection = () => {
           <div className={styles.my_experience}>
             {MyWholeExperience.map((e) => (
               <Experience
+                key={e.company_name}
                 company_logo={e.company_logo}
                 job_role={e.job_role}
                 company_name={e.company_name}
