@@ -8,7 +8,8 @@ export { default as ExperienceSection } from "./sections/experience";
 
 // Blocks
 export { default as Header } from "./blocks/header";
+export { default as Card } from "./blocks/card";
+export { default as Experience } from "./blocks/experience";
 
 // Elements
 export { default as Button } from "./elements/button";
-export { default as Card } from "./blocks/card";

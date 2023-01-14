@@ -30,7 +30,7 @@ export default function Home() {
         <MyServiceInfo />
         <LatestProjectsSection />
         <TechnologiesSection />
-        {/* <ExperienceSection /> */}
+        <ExperienceSection />
       </main>
     </>
   );

@@ -1,0 +1,67 @@
+@import "../../../scss/helpers.scss";
+
+.experience {
+  border: 1px solid #0000001a;
+
+  .exp_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 20px;
+    border: 1px solid #0000001a;
+    padding: 20px;
+
+    .company_logo {
+      width: 80px;
+    }
+
+    .company_info {
+      display: flex;
+      flex-direction: column;
+      row-gap: 4px;
+
+      .job_role {
+        font-size: 18px;
+      }
+      .company_name {
+        font-size: 16px;
+        opacity: 0.8;
+        font-weight: 500;
+      }
+      .job_duration {
+        font-size: 16px;
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .exp_body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    border: 1px solid #0000001a;
+    padding: 20px;
+
+    .job_description {
+      font-size: 16px;
+      opacity: 0.8;
+      line-height: 22px;
+    }
+    .responsibilities_heading {
+      font-size: 18px;
+      font-weight: 500;
+      margin-top: 20px;
+    }
+    .all_responsibilities {
+      display: flex;
+      flex-direction: column;
+      row-gap: 6px;
+
+      .each_responsibility {
+        font-size: 16px;
+        opacity: 0.8;
+      }
+    }
+  }
+}

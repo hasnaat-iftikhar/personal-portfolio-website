@@ -8,7 +8,6 @@ import Navigate from "../../../icons/navigate.svg";
 
 // Styles
 import styles from "./styles.module.scss";
-import Image from "next/image";
 
 const ProjectsSection = () => {
   return (
@@ -24,9 +23,8 @@ const ProjectsSection = () => {
             >
               <Navigate />
             </a>
-            <Image
-              width={312}
-              height={222}
+
+            <img
               src={project.image}
               alt={project.name}
               className={styles.project_image}
