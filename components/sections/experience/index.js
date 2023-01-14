@@ -31,8 +31,8 @@ const ExperienceSection = () => {
             ))}
           </div>
           <div className={styles.my_qna}>
-            {qna.map((qa) => (
-              <div className={styles.qna_box}>
+            {qna.map((qa, index) => (
+              <div className={styles.qna_box} key={index}>
                 <p className={styles.q}>{qa.question}</p>
                 <p className={styles.a}>{qa.answer}</p>
               </div>
