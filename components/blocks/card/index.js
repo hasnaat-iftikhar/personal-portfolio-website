@@ -10,10 +10,7 @@ const Card = ({ title, description, image, url }) => {
         <img
           src={image}
           alt={title}
-          style={{
-            width: "100%",
-            height: "100%",
-          }}
+          style={{ width: "100%", height: "100%" }}
         />
       </div>
       <div className={styles.content_box}>

@@ -15,9 +15,15 @@ const ProjectsSection = () => {
       <div className={styles.projects_wrapper}>
         {projects?.map((project, index) => (
           <div className={styles.each_project} key={index}>
-            <a href={project.url} target="_blank" className={styles.backdrop}>
+            <a
+              href={project.url}
+              target="_blank"
+              rel="noreferrer"
+              className={styles.backdrop}
+            >
               <Navigate />
             </a>
+
             <img
               src={project.image}
               alt={project.name}

@@ -1,0 +1,53 @@
+@import "../../../scss/helpers.scss";
+
+.experience_section {
+  .container {
+    @include contentWidth;
+
+    .section_title {
+      @include PrimaryFont;
+      color: $black;
+      font-size: 42px;
+    }
+
+    .experience_with_qna {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: row;
+      column-gap: 20px;
+      position: relative;
+
+      .my_experience {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+      }
+
+      .my_qna {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        position: sticky;
+        top: 20px;
+        bottom: 20px;
+        height: fit-content;
+
+        .qna_box {
+          display: flex;
+          flex-direction: column;
+          row-gap: 10px;
+
+          .q {
+            font-size: 18px;
+            font-weight: 500;
+          }
+
+          .a {
+            opacity: 0.8;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+  }
+}
