@@ -90,7 +90,7 @@ const TechnologiesSection = () => {
       <h2 className={styles.section_title}>Tools which I love to use!</h2>
       <div className={styles.technologies_wrapper}>
         {technologies.map((technology) => (
-          <div className={styles.technologyBox}>
+          <div className={styles.technologyBox} key={technology.name}>
             <div className={styles.technology}>
               <Image
                 src={technology.Icon}

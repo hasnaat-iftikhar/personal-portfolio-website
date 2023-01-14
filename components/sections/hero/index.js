@@ -16,7 +16,7 @@ const HeroSection = () => {
         <h1 className={styles.hero_title}>
           Love to build optimized and insane applications on press of keyboard
         </h1>
-        <Button>Let's build project together</Button>
+        <Button>Let&apos;s build project together</Button>
       </div>
     </section>
   );

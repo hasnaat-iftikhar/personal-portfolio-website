@@ -1,0 +1,13 @@
+@import "../../../scss/helpers.scss";
+
+.experience_section {
+  .container {
+    @include contentWidth;
+
+    .section_title {
+      @include PrimaryFont;
+      color: $black;
+      font-size: 42px;
+    }
+  }
+}

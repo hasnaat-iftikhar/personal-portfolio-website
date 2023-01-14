@@ -8,6 +8,7 @@ import {
   ProjectsSection,
   LatestProjectsSection,
   TechnologiesSection,
+  ExperienceSection,
 } from "../components";
 
 export default function Home() {
@@ -29,6 +30,7 @@ export default function Home() {
         <MyServiceInfo />
         <LatestProjectsSection />
         <TechnologiesSection />
+        {/* <ExperienceSection /> */}
       </main>
     </>
   );

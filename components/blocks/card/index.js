@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 // Styles
@@ -7,14 +8,7 @@ const Card = ({ title, description, image, url }) => {
   return (
     <div className={styles.card_wrapper}>
       <div className={styles.imageBox}>
-        <img
-          src={image}
-          alt={title}
-          style={{
-            width: "100%",
-            height: "100%",
-          }}
-        />
+        <Image src={image} alt={title} width={412} height={265} />
       </div>
       <div className={styles.content_box}>
         <h3 className={styles.content_title}>{title}</h3>
