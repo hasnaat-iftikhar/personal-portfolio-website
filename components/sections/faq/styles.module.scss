@@ -1,0 +1,32 @@
+@import "../../../scss/helpers.scss";
+
+.faq_section {
+  background-color: $black;
+  margin-top: 100px;
+
+  .container {
+    @include contentWidth;
+    padding: 100px 0;
+
+    .section_title {
+      @include PrimaryFont;
+      color: $white;
+      font-size: 42px;
+    }
+
+    .all_faqs {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      column-gap: 30px;
+      row-gap: 30px;
+      justify-content: space-between;
+      margin-top: 50px;
+
+      .each_faq {
+        flex-basis: 30%;
+        flex-grow: 1;
+      }
+    }
+  }
+}
