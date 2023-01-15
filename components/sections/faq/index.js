@@ -15,8 +15,9 @@ const FaQSection = () => {
       <div className={styles.container}>
         <h2 className={styles.section_title}>Frequently asked questions</h2>
         <div className={styles.all_faqs}>
-          {faqs.map((data) => (
+          {faqs.map((data, index) => (
             <Accordion
+              key={index}
               className={styles.each_faq}
               question={data.q}
               answer={data.a}
