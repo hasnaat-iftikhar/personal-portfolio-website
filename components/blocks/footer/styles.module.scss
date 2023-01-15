@@ -1,0 +1,23 @@
+@import "../../../scss/helpers.scss";
+
+.footer {
+  background-color: $black;
+  border-top: 2px solid #ffffff14;
+
+  .container {
+    @include contentWidth;
+    padding: 30px 0;
+
+    .contactInfo {
+      font-size: 18px;
+      line-height: 42px;
+      cursor: pointer;
+      color: $white;
+      opacity: 0.8;
+
+      span {
+        font-weight: 300;
+      }
+    }
+  }
+}
