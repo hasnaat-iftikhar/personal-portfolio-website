@@ -9,6 +9,7 @@ import {
   LatestProjectsSection,
   TechnologiesSection,
   ExperienceSection,
+  FaQSection,
 } from "../components";
 
 export default function Home() {
@@ -31,6 +32,7 @@ export default function Home() {
         <LatestProjectsSection />
         <TechnologiesSection />
         <ExperienceSection />
+        <FaQSection />
       </main>
     </>
   );
