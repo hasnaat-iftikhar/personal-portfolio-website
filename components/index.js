@@ -9,6 +9,7 @@ export { default as FaQSection } from "./sections/faq";
 
 // Blocks
 export { default as Header } from "./blocks/header";
+export { default as Footer } from "./blocks/footer";
 export { default as Card } from "./blocks/card";
 export { default as Experience } from "./blocks/experience";
 export { default as Accordion } from "./blocks/accordion";

@@ -10,6 +10,7 @@ import {
   TechnologiesSection,
   ExperienceSection,
   FaQSection,
+  Footer,
 } from "../components";
 
 export default function Home() {
@@ -33,6 +34,7 @@ export default function Home() {
         <TechnologiesSection />
         <ExperienceSection />
         <FaQSection />
+        <Footer />
       </main>
     </>
   );
