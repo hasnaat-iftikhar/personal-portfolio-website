@@ -1,0 +1,34 @@
+@import "../../../scss/helpers.scss";
+
+.card_wrapper {
+  background: #ffffff08;
+  border-radius: 4px;
+
+  .imageBox {
+    border-radius: 4px;
+  }
+
+  .content_box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    margin-top: 10px;
+    padding: 20px;
+    cursor: default;
+
+    .content_title {
+      color: $white;
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+    }
+
+    .content_description {
+      font-size: 16px;
+      font-weight: 100;
+      color: $white;
+      opacity: 0.8;
+      line-height: 22px;
+    }
+  }
+}

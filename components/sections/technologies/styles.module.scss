@@ -1,0 +1,46 @@
+@import "../../../scss/helpers.scss";
+
+.technologies_section {
+  @include contentWidth;
+  padding: 100px 0;
+
+  .section_title {
+    @include PrimaryFont;
+    color: $black;
+    font-size: 42px;
+  }
+
+  .technologies_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    border: 1px solid #0000001a;
+
+    .technologyBox {
+      flex-basis: 19%;
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #0000001a;
+      padding: 50px 0;
+      filter: grayscale(0.8);
+      transition: 0.3s;
+
+      &:hover {
+        filter: grayscale(0);
+        transform: scale(1.1);
+        background-color: $white;
+        z-index: 1;
+        box-shadow: 0 0 2px 0px #00000033;
+      }
+
+      .technology {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}

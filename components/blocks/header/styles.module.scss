@@ -1,0 +1,42 @@
+@import "../../../scss/helpers.scss";
+
+.header {
+  @include contentWidth;
+  padding: 20px 0;
+
+  .h_flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo_text {
+      @include PrimaryFont;
+      font-size: 44px;
+      line-height: 42px;
+      cursor: pointer;
+
+      .highlightedDot {
+        color: #fc3e6b;
+        font-size: 60px;
+      }
+    }
+
+    .menuBox {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      column-gap: 50px;
+
+      .mb_links {
+        display: flex;
+        flex-direction: row;
+        column-gap: 50px;
+
+        .link_text {
+          color: $black;
+        }
+      }
+    }
+  }
+}
