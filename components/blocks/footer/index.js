@@ -15,7 +15,7 @@ const Footer = () => {
           Book a free 15-minute session where we will discuss your project, your
           issues and how to solve them.
         </p>
-        <Button>Let's build a project together!</Button>
+        <Button>Book a free consultation</Button>
       </div>
     </footer>
   );
