@@ -23,6 +23,10 @@ export default function Home() {
           content="Hasnaat Iftikhar - FullStack Developer and Elevating my skills in Cloud"
         />
         <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
       </Head>
 
       <main>

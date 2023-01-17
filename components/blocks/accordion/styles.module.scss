@@ -3,30 +3,55 @@
 .accordion {
   display: flex;
   flex-direction: column;
-  border: 2px solid #ffffff14;
+  row-gap: 20px;
+  border-bottom: 1px solid $black;
+  padding-bottom: 30px;
 
   .header {
-    padding: 20px;
-    border-bottom: 2px solid #ffffff14;
-    background: #ffffff08;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      padding: 0 14px;
+    }
 
     .question {
-      font-size: 18px;
-      color: $white;
-      opacity: 0.8;
+      @include PrimaryFont;
+      font-size: 36px;
+      color: $black;
       font-weight: 300;
       letter-spacing: 0.5px;
+    }
+
+    .arrowBox {
+      background-color: $black;
+      padding: 14px;
+      width: 18px;
+      height: 18px;
+      border-radius: 100px;
+
+      svg {
+        transition: 0.5s;
+      }
+
+      .rotatedArrow {
+        transform: rotate(-90deg);
+      }
     }
   }
 
   .body {
-    padding: 20px;
+    cursor: default;
 
     .answer {
-      color: $white;
-      font-size: 16px;
+      color: $black;
+      font-size: 18px;
       line-height: 24px;
-      opacity: 0.6;
+      opacity: 0.9;
       font-weight: 300;
       letter-spacing: 0.5px;
     }

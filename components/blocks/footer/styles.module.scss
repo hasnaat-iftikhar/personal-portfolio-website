@@ -3,21 +3,30 @@
 .footer {
   background-color: $black;
   border-top: 2px solid #ffffff14;
+  margin-top: 100px;
 
   .container {
-    @include contentWidth;
-    padding: 30px 0;
+    padding: 150px 0;
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px;
 
-    .contactInfo {
+    .sectionTitle {
+      @include PrimaryFont;
+      color: $white;
+      font-size: 34px;
+    }
+
+    .subTitle {
       font-size: 18px;
-      line-height: 42px;
-      cursor: pointer;
+      font-weight: 300;
+      line-height: 24px;
       color: $white;
       opacity: 0.8;
-
-      span {
-        font-weight: 300;
-      }
     }
   }
 }
