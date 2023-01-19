@@ -34,6 +34,10 @@
       @include mini_tablet {
         font-size: 36px;
       }
+
+      @include mobile {
+        font-size: 32px;
+      }
     }
 
     .content_description {
@@ -46,6 +50,11 @@
       @include tablet {
         font-size: 18px;
         line-height: 26px;
+      }
+
+      @include mobile {
+        font-size: 16px;
+        line-height: 22px;
       }
     }
   }

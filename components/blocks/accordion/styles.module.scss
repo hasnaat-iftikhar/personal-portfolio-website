@@ -46,6 +46,10 @@
         padding: 10px;
       }
 
+      @include mobile {
+        display: none;
+      }
+
       svg {
         transition: 0.5s;
       }

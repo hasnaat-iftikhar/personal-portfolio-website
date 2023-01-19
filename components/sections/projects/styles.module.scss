@@ -29,6 +29,10 @@
         flex-grow: 1;
       }
 
+      @include mobile {
+        flex-basis: 100%;
+      }
+
       .backdrop {
         position: absolute;
         top: 0;

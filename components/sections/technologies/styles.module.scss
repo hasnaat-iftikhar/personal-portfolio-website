@@ -20,6 +20,10 @@
     @include mini_tablet {
       font-size: 44px;
     }
+
+    @include mobile {
+      font-size: 36px;
+    }
   }
 
   .technologies_wrapper {
@@ -58,6 +62,10 @@
         filter: grayscale(0);
       }
 
+      @include mobile {
+        padding: 30px 0;
+      }
+
       .technology {
         width: 100px;
         height: 100px;
@@ -65,6 +73,11 @@
         @include mini_laptop {
           width: 80px;
           height: 80px;
+        }
+
+        @include mobile {
+          width: 60px;
+          height: 60px;
         }
       }
     }

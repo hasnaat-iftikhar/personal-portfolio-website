@@ -24,6 +24,10 @@
       @include mini_tablet {
         font-size: 44px;
       }
+
+      @include mobile {
+        font-size: 36px;
+      }
     }
 
     .projects_wrapper {
