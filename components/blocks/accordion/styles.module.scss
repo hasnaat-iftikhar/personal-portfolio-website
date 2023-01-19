@@ -7,6 +7,10 @@
   border-bottom: 1px solid $black;
   padding-bottom: 30px;
 
+  @include mini_laptop {
+    padding-bottom: 20px;
+  }
+
   .header {
     display: flex;
     flex-direction: row;
@@ -25,6 +29,10 @@
       color: $black;
       font-weight: 300;
       letter-spacing: 0.5px;
+
+      @include tablet {
+        font-size: 32px;
+      }
     }
 
     .arrowBox {
@@ -33,6 +41,14 @@
       width: 18px;
       height: 18px;
       border-radius: 100px;
+
+      @include tablet {
+        padding: 10px;
+      }
+
+      @include mobile {
+        display: none;
+      }
 
       svg {
         transition: 0.5s;

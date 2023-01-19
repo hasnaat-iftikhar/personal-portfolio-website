@@ -4,10 +4,18 @@
   margin-top: 200px;
   @include contentWidth;
 
+  @include mini_laptop {
+    margin-top: 180px;
+  }
+
   .serviceInfo_contantcontainer {
     max-width: 520px;
     margin-left: auto;
     margin-right: auto;
+
+    @include mini_laptop {
+      max-width: 600px;
+    }
 
     .content_titleBox {
       position: relative;
@@ -30,6 +38,10 @@
       .myService_title {
         @include PrimaryFont;
         font-size: 32px;
+
+        @include mobile {
+          font-size: 36px;
+        }
       }
     }
 
@@ -44,6 +56,10 @@
 
         &:nth-child(2) {
           margin-top: 12px;
+        }
+
+        @include mobile {
+          font-size: 16px;
         }
       }
     }

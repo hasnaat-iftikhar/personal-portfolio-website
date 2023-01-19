@@ -63,3 +63,47 @@ $yellow: #fda228;
 @mixin SecondaryFont() {
   font-family: "Sfprodisplay";
 }
+
+// Media quiries
+
+@mixin desktop {
+  @media only screen and (max-width: "1600px") {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media only screen and (max-width: "1440px") {
+    @content;
+  }
+}
+
+@mixin mini_laptop {
+  @media only screen and (max-width: "1140px") {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (max-width: "960px") {
+    @content;
+  }
+}
+
+@mixin mini_tablet {
+  @media only screen and (max-width: "720px") {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media only screen and (max-width: "540px") {
+    @content;
+  }
+}
+
+@mixin small_devices {
+  @media only screen and (max-width: "400px") {
+    @content;
+  }
+}

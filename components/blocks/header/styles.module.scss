@@ -28,6 +28,10 @@
       align-items: center;
       column-gap: 50px;
 
+      @include mini_tablet {
+        display: none;
+      }
+
       .mb_links {
         display: flex;
         flex-direction: row;

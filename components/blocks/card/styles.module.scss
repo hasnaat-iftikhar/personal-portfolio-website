@@ -16,11 +16,28 @@
     padding: 20px;
     cursor: default;
 
+    @include tablet {
+      row-gap: 14px;
+    }
+
     .content_title {
       color: $white;
       font-size: 20px;
       font-weight: 400;
       letter-spacing: 0.5px;
+
+      @include tablet {
+        @include PrimaryFont;
+        font-size: 38px;
+      }
+
+      @include mini_tablet {
+        font-size: 36px;
+      }
+
+      @include mobile {
+        font-size: 32px;
+      }
     }
 
     .content_description {
@@ -29,6 +46,16 @@
       color: $white;
       opacity: 0.8;
       line-height: 22px;
+
+      @include tablet {
+        font-size: 18px;
+        line-height: 26px;
+      }
+
+      @include mobile {
+        font-size: 16px;
+        line-height: 22px;
+      }
     }
   }
 }

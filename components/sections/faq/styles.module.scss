@@ -7,6 +7,10 @@
     @include contentWidth;
     width: 80%;
 
+    @include mini_tablet {
+      width: 94%;
+    }
+
     .all_faqs {
       display: flex;
       flex-direction: column;

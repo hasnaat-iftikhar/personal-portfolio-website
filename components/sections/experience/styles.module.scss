@@ -8,14 +8,33 @@
       @include PrimaryFont;
       color: $black;
       font-size: 42px;
-    }
 
+      @include mini_laptop {
+        font-size: 38px;
+      }
+
+      @include tablet {
+        font-size: 54px;
+      }
+
+      @include mini_tablet {
+        font-size: 44px;
+      }
+
+      @include mobile {
+        font-size: 36px;
+      }
+    }
     .experience_with_qna {
       margin-top: 50px;
       display: flex;
       flex-direction: row;
       column-gap: 20px;
       position: relative;
+
+      @include tablet {
+        flex-direction: column;
+      }
 
       .my_experience {
         display: flex;
@@ -31,6 +50,11 @@
         top: 20px;
         bottom: 20px;
         height: fit-content;
+
+        @include tablet {
+          position: static;
+          margin-top: 50px;
+        }
 
         .qna_box {
           display: flex;

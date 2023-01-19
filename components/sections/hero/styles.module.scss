@@ -11,16 +11,56 @@
     flex-direction: column;
     align-items: center;
     row-gap: 24px;
+    text-align: center;
 
     .hero_tagline {
       color: $yellow;
       font-size: 12px;
       letter-spacing: 8px;
       text-transform: uppercase;
+
+      @include mini_laptop {
+        font-size: 8px;
+        font-weight: bold;
+      }
+
+      @include tablet {
+        font-size: 9px;
+        font-weight: bold;
+        letter-spacing: 7px;
+      }
+
+      @include mini_tablet {
+        line-height: 18px;
+      }
+
+      @include mobile {
+        max-width: 372px;
+      }
     }
+
     .hero_title {
       @include PrimaryFont;
       font-size: 72px;
+
+      @include mini_laptop {
+        font-size: 56px;
+      }
+
+      @include tablet {
+        font-size: 48px;
+      }
+
+      @include mini_tablet {
+        font-size: 44px;
+        line-height: 52px;
+        max-width: 600px;
+      }
+
+      @include mobile {
+        font-size: 46px;
+        line-height: 52px;
+      }
     }
   }
 }

@@ -8,6 +8,22 @@
     @include PrimaryFont;
     color: $black;
     font-size: 42px;
+
+    @include mini_laptop {
+      font-size: 38px;
+    }
+
+    @include tablet {
+      font-size: 54px;
+    }
+
+    @include mini_tablet {
+      font-size: 44px;
+    }
+
+    @include mobile {
+      font-size: 36px;
+    }
   }
 
   .technologies_wrapper {
@@ -37,9 +53,32 @@
         box-shadow: 0 0 2px 0px #00000033;
       }
 
+      @include mini_laptop {
+        padding: 40px 0;
+      }
+
+      @include tablet {
+        flex-basis: 25%;
+        filter: grayscale(0);
+      }
+
+      @include mobile {
+        padding: 30px 0;
+      }
+
       .technology {
         width: 100px;
         height: 100px;
+
+        @include mini_laptop {
+          width: 80px;
+          height: 80px;
+        }
+
+        @include mobile {
+          width: 60px;
+          height: 60px;
+        }
       }
     }
   }
