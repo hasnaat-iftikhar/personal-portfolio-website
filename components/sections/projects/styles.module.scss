@@ -1,3 +1,5 @@
+@import "../../../scss/helpers.scss";
+
 .projects_section {
   margin-top: 50px;
 
@@ -5,6 +7,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @include tablet {
+      flex-wrap: wrap;
+    }
 
     .each_project {
       width: 100%;
@@ -16,6 +22,11 @@
         .backdrop {
           display: flex;
         }
+      }
+
+      @include tablet {
+        flex-basis: 50%;
+        flex-grow: 1;
       }
 
       .backdrop {

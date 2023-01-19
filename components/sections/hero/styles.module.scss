@@ -23,6 +23,12 @@
         font-size: 8px;
         font-weight: bold;
       }
+
+      @include tablet {
+        font-size: 9px;
+        font-weight: bold;
+        letter-spacing: 7px;
+      }
     }
 
     .hero_title {
@@ -31,6 +37,10 @@
 
       @include mini_laptop {
         font-size: 56px;
+      }
+
+      @include tablet {
+        font-size: 48px;
       }
     }
   }

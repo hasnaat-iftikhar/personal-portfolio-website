@@ -12,6 +12,10 @@
     @include mini_laptop {
       font-size: 38px;
     }
+
+    @include tablet {
+      font-size: 54px;
+    }
   }
 
   .technologies_wrapper {
@@ -43,6 +47,11 @@
 
       @include mini_laptop {
         padding: 40px 0;
+      }
+
+      @include tablet {
+        flex-basis: 25%;
+        filter: grayscale(0);
       }
 
       .technology {

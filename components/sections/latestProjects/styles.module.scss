@@ -17,8 +17,8 @@
       color: $white;
       font-size: 42px;
 
-      @include mini_laptop {
-        font-size: 38px;
+      @include tablet {
+        font-size: 54px;
       }
     }
 
@@ -28,6 +28,11 @@
       justify-content: flex-start;
       column-gap: 20px;
       margin-top: 50px;
+
+      @include tablet {
+        flex-direction: column;
+        row-gap: 30px;
+      }
     }
   }
 }
