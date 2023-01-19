@@ -4,10 +4,18 @@
   margin-top: 200px;
   @include contentWidth;
 
+  @include mini_laptop {
+    margin-top: 180px;
+  }
+
   .serviceInfo_contantcontainer {
     max-width: 520px;
     margin-left: auto;
     margin-right: auto;
+
+    @include mini_laptop {
+      max-width: 600px;
+    }
 
     .content_titleBox {
       position: relative;

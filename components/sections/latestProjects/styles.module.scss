@@ -4,6 +4,10 @@
   background-color: $black;
   margin-top: 250px;
 
+  @include mini_laptop {
+    margin-top: 180px;
+  }
+
   .container {
     @include contentWidth;
     padding: 100px 0;
@@ -12,6 +16,10 @@
       @include PrimaryFont;
       color: $white;
       font-size: 42px;
+
+      @include mini_laptop {
+        font-size: 38px;
+      }
     }
 
     .projects_wrapper {

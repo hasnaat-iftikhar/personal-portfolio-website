@@ -7,6 +7,10 @@
   border-bottom: 1px solid $black;
   padding-bottom: 30px;
 
+  @include mini_laptop {
+    padding-bottom: 20px;
+  }
+
   .header {
     display: flex;
     flex-direction: row;

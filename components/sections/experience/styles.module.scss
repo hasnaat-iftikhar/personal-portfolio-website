@@ -8,6 +8,10 @@
       @include PrimaryFont;
       color: $black;
       font-size: 42px;
+
+      @include mini_laptop {
+        font-size: 38px;
+      }
     }
 
     .experience_with_qna {
