@@ -29,6 +29,10 @@
         font-weight: bold;
         letter-spacing: 7px;
       }
+
+      @include mini_tablet {
+        line-height: 18px;
+      }
     }
 
     .hero_title {
@@ -41,6 +45,12 @@
 
       @include tablet {
         font-size: 48px;
+      }
+
+      @include mini_tablet {
+        font-size: 44px;
+        line-height: 52px;
+        max-width: 600px;
       }
     }
   }

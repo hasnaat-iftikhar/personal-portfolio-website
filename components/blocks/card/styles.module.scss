@@ -30,6 +30,10 @@
         @include PrimaryFont;
         font-size: 38px;
       }
+
+      @include mini_tablet {
+        font-size: 36px;
+      }
     }
 
     .content_description {

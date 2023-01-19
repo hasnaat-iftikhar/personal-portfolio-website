@@ -16,6 +16,10 @@
       @include tablet {
         font-size: 54px;
       }
+
+      @include mini_tablet {
+        font-size: 44px;
+      }
     }
 
     .experience_with_qna {
