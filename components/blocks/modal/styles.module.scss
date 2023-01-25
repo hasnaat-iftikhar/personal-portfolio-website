@@ -1,0 +1,59 @@
+@import "../../../scss/helpers.scss";
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.6;
+  z-index: 10;
+}
+
+.modal {
+  background-color: $white;
+  width: 70%;
+  max-height: 90vh;
+  margin: 0 auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 11;
+  border-radius: 10px;
+  border: 2px solid $black;
+  overflow: auto;
+
+  /* width */
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  .crossBtn {
+    padding: 20px;
+    margin-left: auto;
+    width: fit-content;
+  }
+
+  .container {
+    padding: 20px 40px 40px 40px;
+
+    .title {
+      @include PrimaryFont;
+      font-size: 34px;
+      text-align: center;
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    .subTitle {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .modalBody {
+      margin-top: 50px;
+    }
+  }
+}

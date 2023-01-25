@@ -1,0 +1,15 @@
+@import "../../../scss/helpers.scss";
+
+.inputField {
+  background-color: #e5e5e580;
+  padding: 20px;
+  border-radius: 4px;
+  width: -webkit-fill-available;
+  font-size: 16px;
+  border: none;
+  outline: none;
+
+  &.textareaField {
+    height: 150px;
+  }
+}
