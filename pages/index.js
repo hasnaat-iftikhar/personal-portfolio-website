@@ -1,4 +1,5 @@
 import Head from "next/head";
+import React from "react";
 
 // Components
 import {
@@ -15,7 +16,7 @@ import {
 
 export default function Home() {
   return (
-    <>
+    <React.Fragment>
       <Head>
         <title>Hasnaat Iftikhar</title>
         <meta
@@ -40,6 +41,6 @@ export default function Home() {
         <FaQSection />
         <Footer />
       </main>
-    </>
+    </React.Fragment>
   );
 }
