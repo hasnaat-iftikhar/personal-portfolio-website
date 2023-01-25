@@ -43,7 +43,7 @@ const ProjectDuration = ({ selectedProjectDuration }) => {
           selectedProjectDuration("There's no rush");
         }}
       >
-        There's no rush
+        There&apos;s no rush
       </Button>
     </div>
   );
