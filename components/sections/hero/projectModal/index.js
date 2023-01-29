@@ -61,11 +61,46 @@ const ProjectModal = ({ onClose }) => {
     );
   };
 
+  const contactFormFields = (fieldValues) => {
+    dispatch({
+      type: PROJECT_ACTION_TYPES.CONTACT_FORM_FIELDS,
+      payload: fieldValues,
+    });
+
+    resetAllFields();
+  };
+
   const nextStep = () => {
     dispatch({
       type: PROJECT_ACTION_TYPES.STEP,
       payload: step + 1,
     });
+  };
+
+  const resetAllFields = () => {
+    dispatch({
+      type: PROJECT_ACTION_TYPES.PROJECT_TYPE,
+      payload: "",
+    });
+    dispatch({
+      type: PROJECT_ACTION_TYPES.PROJECT_DETAILS,
+      payload: "",
+    });
+    dispatch({
+      type: PROJECT_ACTION_TYPES.PROJECT_DURATION,
+      payload: "",
+    });
+    dispatch({
+      type: PROJECT_ACTION_TYPES.FINAL_ANSWER,
+      payload: "",
+    });
+    dispatch({
+      type: PROJECT_ACTION_TYPES.CONTACT_FORM_FIELDS,
+      payload: "",
+    });
+    setTimeout(() => {
+      return onClose();
+    }, 500);
   };
 
   const stepToRender = (step) => {
@@ -80,12 +115,12 @@ const ProjectModal = ({ onClose }) => {
     } else if (step === 4) {
       return <HowYouFindMyWork finalAnswer={finalAnswer} />;
     } else {
-      return <ContactForm />;
+      return <ContactForm contactFormFields={contactFormFields} />;
     }
   };
 
   return (
-    <Modal title={modalTitle} onClose={onClose}>
+    <Modal title={modalTitle} onClose={resetAllFields}>
       {stepToRender(step)}
     </Modal>
   );
