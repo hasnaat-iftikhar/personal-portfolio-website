@@ -18,16 +18,15 @@ export default function Home() {
   return (
     <React.Fragment>
       <Head>
-        <title>Hasnaat Iftikhar</title>
+        <title>
+          Hasnaat Iftikhar - FullStack ReactJS Developer at Visiata with strong
+          focus on learning Backend development
+        </title>
         <meta
           name="description"
-          content="Hasnaat Iftikhar - FullStack Developer and Elevating my skills in Cloud"
+          content="Hasnaat Iftikhar - FullStack ReactJS Developer at Visiata with strong focus on learning Backend development"
         />
         <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-        />
       </Head>
 
       <main>

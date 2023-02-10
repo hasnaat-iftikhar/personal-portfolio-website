@@ -69,7 +69,11 @@ const ContactForm = ({ contactFormFields }) => {
           }}
         />
       </div>
-      <Button type="dark" className={styles.button} onClick={() => onSubmit()}>
+      <Button
+        variation="dark"
+        className={styles.button}
+        onClick={() => onSubmit()}
+      >
         SEND
       </Button>
     </div>

@@ -3,12 +3,19 @@ import React from "react";
 // Styles
 import styles from "./styles.module.scss";
 
-const Button = ({ children, className = "", type = "light", onClick }) => {
+const Button = ({
+  children,
+  className = "",
+  type = "button",
+  variation = "light",
+  onClick,
+}) => {
   return (
     <button
+      type={type}
       onClick={onClick}
       className={`${styles.button} ${className} ${
-        type === "dark" ? styles.darkBtn : styles.lightBtn
+        variation === "dark" ? styles.darkBtn : styles.lightBtn
       }`}
     >
       {children}

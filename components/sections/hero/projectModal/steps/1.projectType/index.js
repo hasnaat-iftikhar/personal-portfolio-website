@@ -1,4 +1,4 @@
-import React, { useReducer } from "react";
+import React from "react";
 
 // Components
 import Button from "../../../../../elements/button";
@@ -10,19 +10,19 @@ const ProjectType = ({ setProjectType }) => {
   return (
     <div className={styles.projectType}>
       <Button
-        type="dark"
+        variation="dark"
         className={styles.button}
         onClick={() => {
-          setProjectType("Website");
+          setProjectType("Web application");
         }}
       >
         Website
       </Button>
       <Button
-        type="dark"
+        variation="dark"
         className={styles.button}
         onClick={() => {
-          setProjectType("Mobile app");
+          setProjectType("Mobile application");
         }}
       >
         Mobile app
