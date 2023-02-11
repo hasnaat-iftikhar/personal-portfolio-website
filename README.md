@@ -8,4 +8,4 @@ The clean and responsive design showcases my projects and experiences, making it
 
 LinkedIn: https://www.linkedin.com/in/hasnaat-iftikhar
 
-**NOTE:** Under development 🚧🚧🚧
+**NOTE:** Website is now completed. You can visit the attached link (hasnaat-iftikhar.com) to see the website live view. Now, just need to do some code refactoring to you guys. So, yo ucan easily use that template!
