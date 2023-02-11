@@ -17,10 +17,6 @@ import {
   project_reducer,
 } from "../reducer";
 
-// DB
-import db from "../../../../libs/firebase";
-import { addDoc, collection } from "firebase/firestore/lite";
-
 const ProjectModal = ({ onClose }) => {
   const [state, dispatch] = useReducer(project_reducer, project_initialValues);
   const { step, projectType, projectDetails, projectDuration, finalAnswer } =
@@ -73,23 +69,7 @@ const ProjectModal = ({ onClose }) => {
     number,
     message,
   }) => {
-    try {
-      await addDoc(collection(db, "projectRequests"), {
-        what_do_clients_need: projectType,
-        client_project_details: projectDetails,
-        when_do_client_need_it: projectDuration,
-        how_client_learn_about_my_work: finalAnswer,
-        client_name: name,
-        client_email: email,
-        client_company: company,
-        client_number: number,
-        client_message: message,
-      });
-
-      resetAllFields();
-    } catch (err) {
-      console.log(err);
-    }
+    resetAllFields();
   };
 
   const nextStep = () => {
