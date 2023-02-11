@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 // Components
@@ -15,9 +16,12 @@ const Header = () => {
           <span className={styles.highlightedDot}>.</span>
         </h3>
 
-        <div className={styles.menuBox}>
+        <Link
+          href="mailto:hasnaatfreelancing@gmail.com"
+          className={styles.menuBox}
+        >
           <Button>Get In Touch</Button>
-        </div>
+        </Link>
       </div>
     </header>
   );

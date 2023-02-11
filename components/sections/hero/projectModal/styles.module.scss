@@ -1,3 +1,5 @@
+@import "../../../../scss/helpers.scss";
+
 .projectType {
   display: flex;
   flex-direction: row;
@@ -5,9 +7,18 @@
   margin: 0 auto;
   column-gap: 20px;
 
+  @include mini_tablet {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
   .button {
     max-width: 250px;
     width: 100%;
+
+    @include mini_tablet {
+      max-width: inherit;
+    }
   }
 }
 

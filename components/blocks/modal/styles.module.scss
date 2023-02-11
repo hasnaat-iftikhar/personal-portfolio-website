@@ -30,6 +30,10 @@
     width: 0px;
   }
 
+  @include mini_tablet {
+    width: 90%;
+  }
+
   .crossBtn {
     padding: 20px;
     margin-left: auto;
@@ -40,12 +44,20 @@
   .container {
     padding: 20px 40px 40px 40px;
 
+    @include mini_tablet {
+      padding: 20px 30px 30px 30px;
+    }
+
     .title {
       @include PrimaryFont;
       font-size: 34px;
       text-align: center;
       width: 70%;
       margin: 0 auto;
+
+      @include mini_tablet {
+        width: 100%;
+      }
     }
 
     .subTitle {
