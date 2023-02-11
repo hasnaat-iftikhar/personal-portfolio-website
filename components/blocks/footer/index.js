@@ -15,7 +15,16 @@ const Footer = () => {
           Book a free 15-minute session where we will discuss your project, your
           issues and how to solve them.
         </p>
-        <Button>Book a free consultation</Button>
+        <Button
+          onClick={() => {
+            window.open(
+              "https://calendly.com/hasnaat-iftikhar/30min",
+              "_blank"
+            );
+          }}
+        >
+          Book a free consultation
+        </Button>
       </div>
     </footer>
   );

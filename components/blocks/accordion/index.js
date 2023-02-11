@@ -6,7 +6,7 @@ import RightArrowIcon from "../../../icons/arrow-right.svg";
 // Styles
 import styles from "./styles.module.scss";
 
-const Accordion = ({ question, answer, className }) => {
+const Accordion = ({ question, answer, className = "" }) => {
   const [toggle, setToggle] = useState(false);
 
   return (
@@ -17,12 +17,12 @@ const Accordion = ({ question, answer, className }) => {
           <RightArrowIcon
             width="100%"
             height="100%"
-            className={toggle === true && styles.rotatedArrow}
+            className={toggle === true ? styles.rotatedArrow : ""}
           />
         </div>
       </div>
       {toggle === true && (
-        <div className={`${styles.body} animate__animated animate__fadeInDown`}>
+        <div className={`${styles.body}`}>
           <p className={styles.answer}>{answer}</p>
         </div>
       )}

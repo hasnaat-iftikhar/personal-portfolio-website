@@ -10,7 +10,7 @@ const ProjectDuration = ({ selectedProjectDuration }) => {
   return (
     <div className={styles.projectDuration}>
       <Button
-        type="dark"
+        variation="dark"
         className={styles.button}
         onClick={() => {
           selectedProjectDuration("As soon as possible");
@@ -19,7 +19,7 @@ const ProjectDuration = ({ selectedProjectDuration }) => {
         As soon as possible
       </Button>
       <Button
-        type="dark"
+        variation="dark"
         className={styles.button}
         onClick={() => {
           selectedProjectDuration("In the next 2 months");
@@ -28,7 +28,7 @@ const ProjectDuration = ({ selectedProjectDuration }) => {
         In the next 2 months
       </Button>
       <Button
-        type="dark"
+        variation="dark"
         className={styles.button}
         onClick={() => {
           selectedProjectDuration("Within 6 months");
@@ -37,7 +37,7 @@ const ProjectDuration = ({ selectedProjectDuration }) => {
         Within 6 months
       </Button>
       <Button
-        type="dark"
+        variation="dark"
         className={styles.button}
         onClick={() => {
           selectedProjectDuration("There's no rush");

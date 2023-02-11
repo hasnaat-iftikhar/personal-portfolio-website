@@ -22,7 +22,7 @@ const HeroSection = () => {
       <section className={styles.hero_section}>
         <div className={styles.content_container}>
           <h5 className={styles.hero_tagline}>
-            FullStack Developer & Elevating my skills in the cloud!
+            FullStack React Developer & Elevating my skills in the Backend!
           </h5>
           <h1 className={styles.hero_title}>
             Love to build optimized and insane applications on press of keyboard

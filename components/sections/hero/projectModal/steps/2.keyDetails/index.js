@@ -21,7 +21,7 @@ const KeyDetails = ({ confirmUserRequirements }) => {
       />
       <Button
         className={styles.nextBtn}
-        type="dark"
+        variation="dark"
         onClick={() => confirmUserRequirements(value)}
       >
         NEXT

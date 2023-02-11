@@ -19,18 +19,10 @@ import {
 
 const ProjectModal = ({ onClose }) => {
   const [state, dispatch] = useReducer(project_reducer, project_initialValues);
-  const { step } = state;
+  const { step, projectType, projectDetails, projectDuration, finalAnswer } =
+    state;
 
   const [modalTitle, setMTodalitle] = useState("What do you need?");
-
-  const setProjectType = (project) => {
-    dispatch({
-      type: PROJECT_ACTION_TYPES.PROJECT_TYPE,
-      payload: project,
-    });
-    nextStep();
-    setMTodalitle("What are the goals you aspire to acheive?");
-  };
 
   const confirmUserRequirements = (userRequirement) => {
     dispatch({
@@ -39,6 +31,15 @@ const ProjectModal = ({ onClose }) => {
     });
     nextStep();
     setMTodalitle("When do you need it?");
+  };
+
+  const setProjectType = (project) => {
+    dispatch({
+      type: PROJECT_ACTION_TYPES.PROJECT_TYPE,
+      payload: project,
+    });
+    nextStep();
+    setMTodalitle("What are the goals you aspire to acheive?");
   };
 
   const selectedProjectDuration = (duration) => {
@@ -50,7 +51,7 @@ const ProjectModal = ({ onClose }) => {
     setMTodalitle("How did you learn about my work?");
   };
 
-  const finalAnswer = (answer) => {
+  const howFindMyWork = (answer) => {
     dispatch({
       type: PROJECT_ACTION_TYPES.FINAL_ANSWER,
       payload: answer,
@@ -61,12 +62,13 @@ const ProjectModal = ({ onClose }) => {
     );
   };
 
-  const contactFormFields = (fieldValues) => {
-    dispatch({
-      type: PROJECT_ACTION_TYPES.CONTACT_FORM_FIELDS,
-      payload: fieldValues,
-    });
-
+  const contactFormFields = async ({
+    name,
+    email,
+    company,
+    number,
+    message,
+  }) => {
     resetAllFields();
   };
 
@@ -113,8 +115,9 @@ const ProjectModal = ({ onClose }) => {
         <ProjectDuration selectedProjectDuration={selectedProjectDuration} />
       );
     } else if (step === 4) {
-      return <HowYouFindMyWork finalAnswer={finalAnswer} />;
-    } else {
+      return <HowYouFindMyWork finalAnswer={howFindMyWork} />;
+    }
+    {
       return <ContactForm contactFormFields={contactFormFields} />;
     }
   };

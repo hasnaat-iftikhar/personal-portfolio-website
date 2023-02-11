@@ -10,7 +10,7 @@ const HowYouFindMyWork = ({ finalAnswer }) => {
   return (
     <div className={styles.howYouFindMyWork}>
       <Button
-        type="dark"
+        variation="dark"
         className={styles.button}
         onClick={() => {
           finalAnswer("Google search");
@@ -19,7 +19,7 @@ const HowYouFindMyWork = ({ finalAnswer }) => {
         Google search
       </Button>
       <Button
-        type="dark"
+        variation="dark"
         className={styles.button}
         onClick={() => {
           finalAnswer("Word of mouth");
@@ -28,7 +28,7 @@ const HowYouFindMyWork = ({ finalAnswer }) => {
         Word of mouth
       </Button>
       <Button
-        type="dark"
+        variation="dark"
         className={styles.button}
         onClick={() => {
           finalAnswer("One of my old projects");
@@ -37,7 +37,7 @@ const HowYouFindMyWork = ({ finalAnswer }) => {
         One of my old projects
       </Button>
       <Button
-        type="dark"
+        variation="dark"
         className={styles.button}
         onClick={() => {
           finalAnswer("Social network");
@@ -46,7 +46,7 @@ const HowYouFindMyWork = ({ finalAnswer }) => {
         Social network
       </Button>
       <Button
-        type="dark"
+        variation="dark"
         className={styles.button}
         onClick={() => {
           finalAnswer("Other");
