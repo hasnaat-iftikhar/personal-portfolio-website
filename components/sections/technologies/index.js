@@ -1,21 +1,7 @@
 import React from "react";
 
 // Icons
-import JavaScript from "../../../icons/javascript.png";
-import TypeScript from "../../../icons/typescript.png";
-import ReactJS from "../../../icons/react.png";
-import NextJS from "../../../icons/next-js.png";
-import GatsBy from "../../../icons/gatsby-js.png";
-import Redux from "../../../icons/redux.png";
-import Tailwind from "../../../icons/tailwind-css.jpg";
-import StyledComponents from "../../../icons/styled-components.png";
-import APIs from "../../../icons/api.png";
-import Postman from "../../../icons/postman.png";
-import NodeJs from "../../../icons/node-js.png";
-import ExpressJs from "../../../icons/express.png";
-import MongoDB from "../../../icons/mongo-db.png";
-import Firebase from "../../../icons/firebase.png";
-import Figma from "../../../icons/figma.png";
+import Wireframe from "../../../icons/icon-wireframe.png";
 
 // Styles
 import styles from "./styles.module.scss";
@@ -24,64 +10,64 @@ import Image from "next/image";
 const TechnologiesSection = () => {
   const technologies = [
     {
-      name: "JavaScript",
-      Icon: JavaScript,
+      name: "Wireframe",
+      Icon: Wireframe,
     },
     {
-      name: "TypeScript",
-      Icon: TypeScript,
+      name: "Wireframe",
+      Icon: Wireframe,
     },
     {
-      name: "React.Js",
-      Icon: ReactJS,
+      name: "Wireframe",
+      Icon: Wireframe,
     },
     {
-      name: "Next.Js",
-      Icon: NextJS,
+      name: "Wireframe",
+      Icon: Wireframe,
     },
     {
-      name: "Gatsby.Js",
-      Icon: GatsBy,
+      name: "Wireframe",
+      Icon: Wireframe,
     },
     {
-      name: "Redux Toolkit",
-      Icon: Redux,
+      name: "Wireframe",
+      Icon: Wireframe,
     },
     {
-      name: "Tailwind CSS",
-      Icon: Tailwind,
+      name: "Wireframe",
+      Icon: Wireframe,
     },
     {
-      name: "Styled components",
-      Icon: StyledComponents,
+      name: "Wireframe",
+      Icon: Wireframe,
     },
     {
-      name: "APIs",
-      Icon: APIs,
+      name: "Wireframe",
+      Icon: Wireframe,
     },
     {
-      name: "Postman",
-      Icon: Postman,
+      name: "Wireframe",
+      Icon: Wireframe,
     },
     {
-      name: "Node.Js",
-      Icon: NodeJs,
+      name: "Wireframe",
+      Icon: Wireframe,
     },
     {
-      name: "Express.Js",
-      Icon: ExpressJs,
+      name: "Wireframe",
+      Icon: Wireframe,
     },
     {
-      name: "MongoDB",
-      Icon: MongoDB,
+      name: "Wireframe",
+      Icon: Wireframe,
     },
     {
-      name: "Firebase",
-      Icon: Firebase,
+      name: "Wireframe",
+      Icon: Wireframe,
     },
     {
-      name: "Figma",
-      Icon: Figma,
+      name: "Wireframe",
+      Icon: Wireframe,
     },
   ];
 

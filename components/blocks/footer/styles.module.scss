@@ -29,4 +29,20 @@
       opacity: 0.8;
     }
   }
+
+  .credits {
+    background: $white;
+    padding: 20px 0;
+    text-align: center;
+
+    h3 {
+      font-weight: 600;
+
+      span {
+        color: $yellow;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+  }
 }

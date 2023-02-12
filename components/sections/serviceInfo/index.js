@@ -9,23 +9,22 @@ const MyServiceInfo = () => {
       <div className={styles.serviceInfo_contantcontainer}>
         <div className={styles.content_titleBox}>
           <div className={styles.yellow_bar} />
-          <h2 className={styles.myService_title}>You need a website</h2>
+          <h2 className={styles.myService_title}>Your first statement</h2>
         </div>
         <div className={styles.content_titleBox}>
           <h2 className={styles.myService_title}>
-            You need a high-performing website
+            Here is your second statement
           </h2>
         </div>
         <div className={styles.myService_descriptionBox}>
           <p className={styles.myService_description}>
-            This word will make the difference between a simple visit on your
-            website.
+            Lorem Ipsum has been the industry's standard dummy text
           </p>
           <p className={styles.myService_description}>
-            Web and Mobile application developer, I&apos;ll help you by building
-            pixel-perfect website and mobile application from scratch and will
-            help you to keep your website up to date by applying changes
-            according to your needs time to time!
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
           </p>
         </div>
       </div>

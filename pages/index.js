@@ -19,12 +19,11 @@ export default function Home() {
     <React.Fragment>
       <Head>
         <title>
-          Hasnaat Iftikhar - FullStack ReactJS Developer at Visiata with strong
-          focus on learning Backend development
+          Personal portfolio website template - Developed by Hasnaat Iftikhar
         </title>
         <meta
           name="description"
-          content="Hasnaat Iftikhar - FullStack ReactJS Developer at Visiata with strong focus on learning Backend development"
+          content="Here is complete source code of a personal portfolio website developed by Hasnaat Iftikhar (FullStack ReactJS Developer). Checkout that website and connect with Hasnaat on LinkedIn!"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

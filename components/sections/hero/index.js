@@ -1,42 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 
 // Components
 import Button from "../../elements/button";
-import ProjectModal from "./projectModal";
 
 // Styles
 import styles from "./styles.module.scss";
 
 const HeroSection = () => {
-  const [modalVisibility, setModalVisibility] = useState(false);
-
   return (
-    <>
-      {modalVisibility === true && (
-        <ProjectModal
-          onClose={() => {
-            setModalVisibility(false);
-          }}
-        />
-      )}
-      <section className={styles.hero_section}>
-        <div className={styles.content_container}>
-          <h5 className={styles.hero_tagline}>
-            FullStack React Developer & Elevating my skills in the Backend!
-          </h5>
-          <h1 className={styles.hero_title}>
-            Love to build optimized and insane applications on press of keyboard
-          </h1>
-          <Button
-            onClick={() => {
-              setModalVisibility(true);
-            }}
-          >
-            Let&apos;s build project together
-          </Button>
-        </div>
-      </section>
-    </>
+    <section className={styles.hero_section}>
+      <div className={styles.content_container}>
+        <h5 className={styles.hero_tagline}>
+          Your seciality with info of your interest
+        </h5>
+        <h1 className={styles.hero_title}>Main title of your website</h1>
+        <Button>Start your journey</Button>
+      </div>
+    </section>
   );
 };
 

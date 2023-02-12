@@ -26,6 +26,21 @@ const Footer = () => {
           Book a free consultation
         </Button>
       </div>
+      <div className={styles.credits}>
+        <h3>
+          Developed by{" "}
+          <span
+            onClick={() => {
+              window.open(
+                "https://www.linkedin.com/in/hasnaat-iftikhar/",
+                "_blank"
+              );
+            }}
+          >
+            @Hasnaat Iftikhar
+          </span>
+        </h3>
+      </div>
     </footer>
   );
 };

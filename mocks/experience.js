@@ -1,35 +1,19 @@
-import Visiata from "../icons/visiata.png";
-import Upwork from "../icons/upwork.png";
+import Wireframe from "../icons/icon-wireframe.png";
 
 const MyWholeExperience = [
   {
-    company_logo: Visiata,
-    job_role: "FullStack Developer",
-    company_name: "Visiata",
-    start_date: "Aug 2021",
-    end_date: "Present",
+    company_logo: Wireframe,
+    job_role: "job title",
+    company_name: "Company name",
+    start_date: "Start date",
+    end_date: "End date",
     job_description:
-      "Working as FullStack web & mobile application developer with Visiata. My role is to build single page, optimized applications and to handle clients as well.",
+      "Job description: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     job_responsibilities: [
-      "Design to pixel-perfect code conversion",
-      "APIs handling, testing and integration",
-      "Clients handling and project management",
-      "App development with clean and understandable code",
-    ],
-  },
-  {
-    company_logo: Upwork,
-    job_role: "Frontend Developer",
-    company_name: "Upwork",
-    start_date: "July 2022",
-    end_date: "Present",
-    job_description:
-      "Working as a Frontend Developer on Upwork. My role is to developed single page web applications using React and to do pixel-perfect code conversion via the design",
-    job_responsibilities: [
-      "React applications development with a lot of interaction and state",
-      "Design to pixel-perfect code conversion",
-      "Make a style guide and make reusable components",
-      "App development with clean and understandable code",
+      "1. Your responsibility",
+      "2. Your responsibility",
+      "3. Your responsibility",
+      "4. Your responsibility",
     ],
   },
 ];
